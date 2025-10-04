@@ -1,0 +1,51 @@
+{
+  "project": "Please provide an app that uploads bank statements, parses expenses, and shows c",
+  "frontend": [
+    {
+      "task": "UI: Please provide an app that uploads bank ",
+      "description": "Build a React component that captures and displays: Please provide an app that uploads bank statements, parses expenses, and shows charts for insights.",
+      "output": "components/BriefInput1.jsx"
+    },
+    {
+      "task": "Component: Expense",
+      "description": "React list for Expense",
+      "output": "components/ExpenseList.jsx"
+    },
+    {
+      "task": "Component: Statement",
+      "description": "React list for Statement",
+      "output": "components/StatementList.jsx"
+    }
+  ],
+  "backend": [
+    {
+      "task": "API: Please provide an app that uploads bank ",
+      "description": "Create a FastAPI endpoint and Pydantic model to accept and persist: Please provide an app that uploads bank statements, parses expenses, and shows charts for insights.",
+      "output": "backend/api_1.py"
+    },
+    {
+      "task": "Model: Expense",
+      "description": "Pydantic model for Expense",
+      "output": "models/expense_model.py"
+    },
+    {
+      "task": "Endpoint: Expense",
+      "description": "CRUD API for Expense",
+      "output": "api/expense_api.py"
+    },
+    {
+      "task": "Model: Statement",
+      "description": "Pydantic model for Statement",
+      "output": "models/statement_model.py"
+    },
+    {
+      "task": "Endpoint: Statement",
+      "description": "CRUD API for Statement",
+      "output": "api/statement_api.py"
+    }
+  ],
+  "integration": {
+    "flow": "Frontend uploads file -> Backend parses and categorizes -> Backend returns JSON -> Frontend displays insights and recommendations",
+    "tech_stack": "FastAPI + SQLite + React (or simple JS) + Chart.js/Recharts"
+  }
+}

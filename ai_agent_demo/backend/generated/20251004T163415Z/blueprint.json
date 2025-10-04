@@ -1,0 +1,36 @@
+{
+  "project": "Build an AI-powered personal finance web app that automatically categorizes expe",
+  "frontend": [
+    {
+      "task": "UI: Build an AI-powered personal finance web",
+      "description": "Build a React component that captures and displays: Build an AI-powered personal finance web app that automatically categorizes expenses",
+      "output": "components/BriefInput1.jsx"
+    },
+    {
+      "task": "Component: Expense",
+      "description": "React list for Expense",
+      "output": "components/ExpenseList.jsx"
+    }
+  ],
+  "backend": [
+    {
+      "task": "API: Build an AI-powered personal finance web",
+      "description": "Create a FastAPI endpoint and Pydantic model to accept and persist: Build an AI-powered personal finance web app that automatically categorizes expenses",
+      "output": "backend/api_1.py"
+    },
+    {
+      "task": "Model: Expense",
+      "description": "Pydantic model for Expense",
+      "output": "models/expense_model.py"
+    },
+    {
+      "task": "Endpoint: Expense",
+      "description": "CRUD API for Expense",
+      "output": "api/expense_api.py"
+    }
+  ],
+  "integration": {
+    "flow": "Frontend uploads file -> Backend parses and categorizes -> Backend returns JSON -> Frontend displays insights and recommendations",
+    "tech_stack": "FastAPI + SQLite + React (or simple JS) + Chart.js/Recharts"
+  }
+}

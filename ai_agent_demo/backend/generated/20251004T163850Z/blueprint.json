@@ -1,0 +1,84 @@
+{
+  "project": "Start a project: upload bank statements, parse expenses, authenticate users, show charts and recommendations.",
+  "components": [
+    {
+      "task": "UI: Start a project: upload bank statements,",
+      "description": "Build a React component that captures and displays: Start a project: upload bank statements, parse expenses, authenticate users, show charts and recommendations.",
+      "output": "20251004T163850Z/components/BriefInput1.jsx"
+    },
+    {
+      "task": "Component: Expense",
+      "description": "React list for Expense",
+      "output": "20251004T163850Z/components/ExpenseList.jsx"
+    },
+    {
+      "task": "Component: Statement",
+      "description": "React list for Statement",
+      "output": "20251004T163850Z/components/StatementList.jsx"
+    },
+    {
+      "task": "Component: User",
+      "description": "React list for User",
+      "output": "20251004T163850Z/components/UserList.jsx"
+    }
+  ],
+  "apis": [
+    {
+      "task": "API: Start a project: upload bank statements,",
+      "description": "Create a FastAPI endpoint and Pydantic model to accept and persist: Start a project: upload bank statements, parse expenses, authenticate users, show charts and recommendations.",
+      "output": "20251004T163850Z/backend/api_1.py",
+      "routes": [
+        "/api/item1"
+      ]
+    },
+    {
+      "task": "Model: Expense",
+      "description": "Pydantic model for Expense",
+      "output": "20251004T163850Z/models/expense_model.py",
+      "routes": []
+    },
+    {
+      "task": "Endpoint: Expense",
+      "description": "CRUD API for Expense",
+      "output": "20251004T163850Z/api/expense_api.py",
+      "routes": [
+        "/expense"
+      ]
+    },
+    {
+      "task": "Model: Statement",
+      "description": "Pydantic model for Statement",
+      "output": "20251004T163850Z/models/statement_model.py",
+      "routes": []
+    },
+    {
+      "task": "Endpoint: Statement",
+      "description": "CRUD API for Statement",
+      "output": "20251004T163850Z/api/statement_api.py",
+      "routes": [
+        "/statement"
+      ]
+    },
+    {
+      "task": "Model: User",
+      "description": "Pydantic model for User",
+      "output": "20251004T163850Z/models/user_model.py",
+      "routes": []
+    },
+    {
+      "task": "Endpoint: User",
+      "description": "CRUD API for User",
+      "output": "20251004T163850Z/api/user_api.py",
+      "routes": [
+        "/user"
+      ]
+    }
+  ],
+  "models": [],
+  "schemas": [],
+  "workflows": [],
+  "integration": {
+    "flow": "Frontend uploads file -> Backend parses and categorizes -> Backend returns JSON -> Frontend displays insights and recommendations",
+    "tech_stack": "FastAPI + SQLite + React (or simple JS) + Chart.js/Recharts"
+  }
+}

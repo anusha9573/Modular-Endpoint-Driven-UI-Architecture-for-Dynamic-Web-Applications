@@ -1,0 +1,59 @@
+{
+  "project": "Develop an AI-powered travel booking app with personalized itinerary suggestions and dynamic pricing. Include user dashboards for bookings, ",
+  "components": [
+    {
+      "task": "UI: Develop an AI-powered travel booking app",
+      "description": "Build a React component that captures and displays: Develop an AI-powered travel booking app with personalized itinerary suggestions and dynamic pricing.",
+      "output": "20251004T164602Z/components/BriefInput1.jsx"
+    },
+    {
+      "task": "UI: Include user dashboards for bookings, re",
+      "description": "Build a React component that captures and displays: Include user dashboards for bookings, real-time alerts, and analytics for travel trends.",
+      "output": "20251004T164602Z/components/BriefInput2.jsx"
+    },
+    {
+      "task": "Component: User",
+      "description": "React list for User",
+      "output": "20251004T164602Z/components/UserList.jsx"
+    }
+  ],
+  "apis": [
+    {
+      "task": "API: Develop an AI-powered travel booking app",
+      "description": "Create a FastAPI endpoint and Pydantic model to accept and persist: Develop an AI-powered travel booking app with personalized itinerary suggestions and dynamic pricing.",
+      "output": "20251004T164602Z/backend/api_1.py",
+      "routes": [
+        "/api/item1"
+      ]
+    },
+    {
+      "task": "API: Include user dashboards for bookings, re",
+      "description": "Create a FastAPI endpoint and Pydantic model to accept and persist: Include user dashboards for bookings, real-time alerts, and analytics for travel trends.",
+      "output": "20251004T164602Z/backend/api_2.py",
+      "routes": [
+        "/api/item2"
+      ]
+    },
+    {
+      "task": "Model: User",
+      "description": "Pydantic model for User",
+      "output": "20251004T164602Z/models/user_model.py",
+      "routes": []
+    },
+    {
+      "task": "Endpoint: User",
+      "description": "CRUD API for User",
+      "output": "20251004T164602Z/api/user_api.py",
+      "routes": [
+        "/user"
+      ]
+    }
+  ],
+  "models": [],
+  "schemas": [],
+  "workflows": [],
+  "integration": {
+    "flow": "Frontend uploads file -> Backend parses and categorizes -> Backend returns JSON -> Frontend displays insights and recommendations",
+    "tech_stack": "FastAPI + SQLite + React (or simple JS) + Chart.js/Recharts"
+  }
+}

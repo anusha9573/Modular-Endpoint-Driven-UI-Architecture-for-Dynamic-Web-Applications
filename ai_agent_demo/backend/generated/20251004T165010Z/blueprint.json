@@ -1,0 +1,65 @@
+{
+  "project": "Start modular project: create reusable components for upload, list, charts; backend APIs for auth and expenses; DB schema and workflows.",
+  "components": [
+    {
+      "task": "UI: Start modular project: create reusable c",
+      "description": "Build a React component that captures and displays: Start modular project: create reusable components for upload, list, charts; backend APIs for auth and expenses; DB schema and workflows.",
+      "output": "20251004T165010Z/components/BriefInput1.jsx"
+    },
+    {
+      "task": "Component: Expense",
+      "description": "React list for Expense",
+      "output": "20251004T165010Z/components/ExpenseList.jsx"
+    },
+    {
+      "task": "Component: Statement",
+      "description": "React list for Statement",
+      "output": "20251004T165010Z/components/StatementList.jsx"
+    }
+  ],
+  "apis": [
+    {
+      "task": "API: Start modular project: create reusable c",
+      "description": "Create a FastAPI endpoint and Pydantic model to accept and persist: Start modular project: create reusable components for upload, list, charts; backend APIs for auth and expenses; DB schema and workflows.",
+      "output": "20251004T165010Z/backend/api_1.py",
+      "routes": [
+        "/api/item1"
+      ]
+    },
+    {
+      "task": "Model: Expense",
+      "description": "Pydantic model for Expense",
+      "output": "20251004T165010Z/models/expense_model.py",
+      "routes": []
+    },
+    {
+      "task": "Endpoint: Expense",
+      "description": "CRUD API for Expense",
+      "output": "20251004T165010Z/api/expense_api.py",
+      "routes": [
+        "/expense"
+      ]
+    },
+    {
+      "task": "Model: Statement",
+      "description": "Pydantic model for Statement",
+      "output": "20251004T165010Z/models/statement_model.py",
+      "routes": []
+    },
+    {
+      "task": "Endpoint: Statement",
+      "description": "CRUD API for Statement",
+      "output": "20251004T165010Z/api/statement_api.py",
+      "routes": [
+        "/statement"
+      ]
+    }
+  ],
+  "models": [],
+  "schemas": [],
+  "workflows": [],
+  "integration": {
+    "flow": "Frontend uploads file -> Backend parses and categorizes -> Backend returns JSON -> Frontend displays insights and recommendations",
+    "tech_stack": "FastAPI + SQLite + React (or simple JS) + Chart.js/Recharts"
+  }
+}
