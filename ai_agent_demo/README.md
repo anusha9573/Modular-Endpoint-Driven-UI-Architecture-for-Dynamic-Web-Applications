@@ -135,10 +135,3 @@ Troubleshooting
 - Slow response or timeouts: a local LLM model download may occur on first `/generate_tasks` calls without `fast=true`. Use `fast=true` for demos.
 - Blueprint missing: if `backend/generated/` is empty, call `/generate_tasks` first. The generator writes `blueprint.json` as part of generation.
 
-Next recommended tasks
-----------------------
-1. Harden generated API templates (parameterized SQL, typed fields, validation).
-2. Add a runnable frontend scaffold to generated artifacts so the ZIP is a ready-to-run project.
-3. Add unit/integration tests that exercise the generate → write → blueprint → export pipeline.
-
-If you want, I can implement any of the next items and run the relevant tests. Tell me which one to prioritize.
